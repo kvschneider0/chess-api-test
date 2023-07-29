@@ -1,4 +1,4 @@
-name: Deploy to AWS CloudFormation
+name: Deploy to AWS CloudFormation - main
 
 on: 
   push:
@@ -18,7 +18,7 @@ jobs:
           aws-access-key-id: ${{ secrets.ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.ACCESS_KEY_SECRET }}
           aws-region: us-east-2
-      - name: Deploy to AWS CloudFormation
+      - name: Deploy to AWS CloudFormation - main
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: node-api-main
