@@ -25,7 +25,7 @@ jobs:
         with:
           args: deploy --stage main
         env:
-          AWS_ACCES_KEY_ID: ${{ secrets.ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_SECRET }}
           # name: node-api-main
           # template: serverless.yml
