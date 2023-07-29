@@ -10,7 +10,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code from main branch
         uses: actions/checkout@v2
       - run: npm ci
       - name: serverless deploy
