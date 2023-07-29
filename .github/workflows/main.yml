@@ -36,4 +36,4 @@ jobs:
         with:
           name: node-api-main
           template: serverless.yml
-          parameter-overrides: "AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_"KEY_ID }},AWS_SECRET_ACCES_KEY_ID=${{ secrets.AWS_SECRET_ACCES_KEY_ID }},stage=main"
+          parameter-overrides: "AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }},AWS_SECRET_ACCES_KEY_ID=${{ secrets.AWS_SECRET_ACCES_KEY_ID }},stage=main"
