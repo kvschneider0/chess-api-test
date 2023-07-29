@@ -22,7 +22,7 @@ jobs:
       
       - run: npm ci
       - name: serverless deploy
-        uses: serverless/github-action@v4.0
+        uses: serverless/github-action@v3.1
         with:
           args: deploy --stage main --stack-name node-api-main --template-file main.yml
         env:
