@@ -1,0 +1,9 @@
+getTest:
+  handler: src/functions/test/index.getTest
+  events:
+    - http:
+        path: test
+        exclude: true
+        method: get
+        cors:
+          origin: "*"
