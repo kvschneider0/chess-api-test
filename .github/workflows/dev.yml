@@ -16,7 +16,7 @@ jobs:
       - name: serverless deploy
         uses: serverless/github-action@v3.1
         with:
-          args: deploy -s dev -f serverless.yml
+          args: deploy -s dev -f ./serverless.yml
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
