@@ -23,3 +23,5 @@ jobs:
         with:
           name: node-api-main
           template: serverless.yml
+          parameters:
+            stage: ${{ github.event.inputs.stage }}
