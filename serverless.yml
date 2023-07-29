@@ -1,8 +1,12 @@
+provider:
+  name: aws
+  stage: ${opt:stage, 'dev'}
+
 Resources:
   TestTable:
     Type: 'AWS::DynamoDB::Table'
     Properties:
-      TableName: TestTable
+      TableName: TestTable-${self:provider.stage}
       AttributeDefinitions:
         - AttributeName: ID
           AttributeType: S
